@@ -1,0 +1,37 @@
+/* MAIN CSS FOR BODY AND DIRECT CHILDS */
+
+body {
+	background-color: #EEE;
+	/* Flex container options */
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap
+}
+
+body > header {
+	background-color: #0EE;
+	/* Flex container options */
+	display: flex;
+	min-width: 100%;
+}
+
+body > main {
+	background-color: #E0E;
+	/* Flex container options */
+	display: flex;
+	min-width: 100%;
+}
+
+body > footer {
+	background-color: #EE0;
+	/* Flex container options */
+	display: flex;
+	min-width: 100%;
+}
+
+/* RESTRICTING THE SVG SIZE TO AVOID LARGE IMAGES */
+
+svg {
+	max-width: 100px;
+	max-height: 100px;
+}
