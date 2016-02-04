@@ -1,37 +1,94 @@
 /* MAIN CSS FOR BODY AND DIRECT CHILDS */
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
 
 body {
 	background-color: #EEE;
+	width: 100%;
+	margin: auto;
+	font-size: 1em;
+	font-family: "Arial";
 	/* Flex container options */
 	display: flex;
 	flex-direction: row;
-	flex-wrap: wrap
+	flex-wrap: wrap;
 }
 
 body > header {
 	background-color: #0EE;
+	width: 20em;
 	/* Flex container options */
 	display: flex;
-	min-width: 100%;
+	text-align: center;
+	flex-direction: column;
+	/* Flex child options */
+	flex-grow: 1;
 }
 
 body > main {
 	background-color: #E0E;
+	width: 60em;
+	padding: 1em;
+	height: 500px;
 	/* Flex container options */
 	display: flex;
-	min-width: 100%;
+	flex-direction: column;
+	/* Flex child options */
+	flex-grow: 6;
 }
 
 body > footer {
 	background-color: #EE0;
+	min-width: 100%;
 	/* Flex container options */
 	display: flex;
-	min-width: 100%;
+	justify-content: center;
 }
 
-/* RESTRICTING THE SVG SIZE TO AVOID LARGE IMAGES */
+/* HEADER OPTIONS */
+
+header svg {
+	width: 10%;
+	height: 10%;
+}
+
+header img {
+	border: 2px solid #000;
+	border-radius: 100%;
+}
+
+header > nav > ul > li {
+	text-align: center;
+	line-height: 150%;
+	vertical-align: baseline;
+}
+
+header > nav > ul > li > a {
+	height: 50px;
+}
+header > nav li:nth-child(4) {
+	margin-bottom: 1em;
+}
+
+/* RESTRICTING STUFF */
 
 svg {
 	max-width: 100px;
 	max-height: 100px;
+}
+
+img {
+	max-width: 100px;
+	max-height: 100px;
+}
+li {
+	list-style: none;
+	text-align: left;
+}
+
+main svg { 
+	display: none;
 }
