@@ -5,8 +5,12 @@
 }
 
 body {
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
-	flex-flow: row wrap;
+	-webkit-flex-flow: row wrap;
+	    -ms-flex-flow: row wrap;
+	        flex-flow: row wrap;
 	font-family: "Comic Sans MS";
 	background-image: url("../images/wov.png");
 }
@@ -15,7 +19,9 @@ body {
 body > header {
 	padding: 1em;
 	width: 15%;
-	flex: 15%;
+	-webkit-flex: 15%;
+	    -ms-flex: 15%;
+	        flex: 15%;
 	margin: 1em;
 	border-radius: 10px;
 	background-color: #EEFFEE;
@@ -74,7 +80,9 @@ body > header > nav svg {
 /* MAIN */
 main {
 	width: 75%;
-	flex: 75%;
+	-webkit-flex: 75%;
+	    -ms-flex: 75%;
+	        flex: 75%;
 }
 
 main > article {
@@ -121,21 +129,33 @@ article > form > fieldset > button {
 }
 
 #photo-albums {
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
-	flex-flow: row wrap;
+	-webkit-flex-flow: row wrap;
+	    -ms-flex-flow: row wrap;
+	        flex-flow: row wrap;
 }
 
 #photo-albums > header {
 	width: 100%;
-	flex: 100%;
+	-webkit-flex: 100%;
+	    -ms-flex: 100%;
+	        flex: 100%;
 }
 
 #photo-albums figure {
 	width: 100%;
 	margin: 1em;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
-	flex-direction: column;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 }
 
 #photo-albums figure img {
@@ -160,16 +180,25 @@ article > form > fieldset > button {
 footer {
 	height: 250px;
 	clear: both;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
 
 	-webkit-flex-flow: row wrap;
-	flex-flow: row wrap;
+	-ms-flex-flow: row wrap;
+	    flex-flow: row wrap;
 
-	justify-content: space-around;
+	-ms-flex-pack: distribute;
+
+	    justify-content: space-around;
 	-webkit-justify-content: space-around;
 	width: 100%;
-	flex: 100%;
-	align-items: center;
+	-webkit-flex: 100%;
+	    -ms-flex: 100%;
+	        flex: 100%;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 
 	border-top: 1px solid #000;
 	background-color: #EEFFEE;
@@ -208,12 +237,16 @@ footer address pre {
  
 	body > header {
 		width: 25%;
-		flex: 25%;
+		-webkit-flex: 25%;
+		    -ms-flex: 25%;
+		        flex: 25%;
 	}
 
 	main {
 		width: 60%;
-		flex: 60%;
+		-webkit-flex: 60%;
+		    -ms-flex: 60%;
+		        flex: 60%;
 	}
 
 	#photo-albums figure img {
@@ -230,12 +263,16 @@ footer address pre {
 
 	body > header {
 		width: 100%;
-		flex: 100%;
+		-webkit-flex: 100%;
+		    -ms-flex: 100%;
+		        flex: 100%;
 	}
 
 	main {
 		width: 100%;
-		flex: 100%;
+		-webkit-flex: 100%;
+		    -ms-flex: 100%;
+		        flex: 100%;
 	}
 
 	#photo-albums figure img {
