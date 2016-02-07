@@ -36,7 +36,7 @@ body > header > p {
 	text-align: center;
 }
 
-body > header > figure > img {
+body > header img {
 	max-width: 70%;
 	min-width: 100px;
 	display: block;
@@ -45,12 +45,12 @@ body > header > figure > img {
 	border: 2px solid #000;
 }
 
-body > header > nav > ul {
+body > header ul {
 	padding: 0;
 	margin-top: 1em;
 }
 
-body > header > nav ul li {
+body > header li {
 	list-style-type: none;
 	height: 2.5em;
 	padding-left: 0.5em;
@@ -59,19 +59,19 @@ body > header > nav ul li {
 	border-right: 1px solid #000;
 }
 
-body > header > nav ul li:first-of-type {
+body > header li:first-of-type {
 	border-top: 1px solid #000;
 }
 
 
-body > header > nav ul li a {
+body > header a {
 	text-decoration: none;
 	color: currentColor;
 	line-height: 220%;
 	display: block;
 }
 
-body > header > nav svg {
+body > header svg {
 	width: 1rem;
 	height: 1rem;
 	margin-right: 0.5em
@@ -92,7 +92,7 @@ main > article {
 	border: 1px solid #000;
 }
 
-main > article > header > h1 > span {
+main h1 > span {
 	font-family: "Times New Roman";
 	font-size: 0.5em;
 	color: #00A;
@@ -110,21 +110,21 @@ article {
 	padding: 1em
 }
 
-article > form > fieldset > label {
+article > form label {
 	display: block;
 	margin-top: 0.5em;
 }
 
-article > form > fieldset > label > input {
+article > form input {
 	border-bottom: 1px solid white;
 	margin: 0.5em;
 }
 
-article > form > fieldset > label > span {
+article > form span {
 	font-size: 0.9em;
 }
 
-article > form > fieldset > button {
+article > form button {
 	margin: 1em 1em 1em 0.5em;
 }
 
@@ -217,7 +217,7 @@ footer ul li {
 	margin: 0.3rem;
 }
 
-footer ul li a {
+footer ul a {
 	text-decoration: none;
 	color: #000;
 }
