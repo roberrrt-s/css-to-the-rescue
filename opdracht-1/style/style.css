@@ -1,3 +1,15 @@
+/* Ampersand oefening */
+
+@font-face {
+	font-family: Ampersand;
+	src:local('Baskerville'),
+	local('Goudy Old Style'),
+	local('Palatino'),
+	local('Book Antiqua');
+	unicode-range:U+26;
+	font-style: italic;
+}
+
 * {
 	box-sizing: border-box;
 	margin:0;
@@ -11,7 +23,7 @@ body {
 	-webkit-flex-flow: row wrap;
 	    -ms-flex-flow: row wrap;
 	        flex-flow: row wrap;
-	font-family: "Verdana";
+	font-family: Ampersand, "Verdana";
 	background-image: url("../images/wov.png");
 }
 
