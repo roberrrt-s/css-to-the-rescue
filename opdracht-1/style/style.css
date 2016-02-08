@@ -113,11 +113,7 @@ main > article {
 }
 
 main h1 > span {
-<<<<<<< HEAD
-	font-family: "Times New Roman";
-=======
 	font-family: "Times New Roman", serif;
->>>>>>> refs/remotes/origin/gh-pages
 	font-size: 0.5em;
 	color: #00A;
 }
