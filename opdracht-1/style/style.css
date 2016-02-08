@@ -28,7 +28,8 @@ body {
 }
 
 p {
-	max-width: 40em;
+	max-width: 50em;
+	text-align: center;
 }
 
 /* HEADER */
