@@ -42,7 +42,8 @@ body > header {
 
 body > header > h1 {
 	text-align: center;
-	font-family: Ampersand, Verdana, sans-serif
+	font-family: Ampersand, Verdana, sans-serif;
+	font-size: 1.3em;
 }
 
 body > header > p {
