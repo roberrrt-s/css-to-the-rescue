@@ -23,7 +23,7 @@ body {
 	-webkit-flex-flow: row wrap;
 	    -ms-flex-flow: row wrap;
 	        flex-flow: row wrap;
-	font-family: Ampersand, "Verdana", sans-serif;
+	font-family: "Verdana", sans-serif;
 	background-image: url("../images/wov.png");
 }
 
@@ -42,6 +42,7 @@ body > header {
 
 body > header > h1 {
 	text-align: center;
+	font-family: Ampersand, Verdana, sans-serif
 }
 
 body > header > p {
