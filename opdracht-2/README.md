@@ -2,4 +2,6 @@
 
 Repository for the course "CSS to the Rescue" for the minor "Everything Web" at the HvA
 
-URL per assignment can be found in README of the folder containing the assignment
+## Opdracht 2
+
+http://roberrrt-s.github.io/css-to-the-rescue/opdracht-2/
