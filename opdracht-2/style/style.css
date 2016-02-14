@@ -33,12 +33,11 @@ p {
 
 /* HEADER */
 body > header {
+	margin: 1em;
 	padding: 1em;
 	width: 250px;
+	border-radius: 10px;
 	overflow: none;
-	position: fixed;
-	top: 0;
-	left: -300px;
 	height: 100%;
 	-webkit-flex: 175px;
 	    -ms-flex: 175px;
@@ -98,17 +97,13 @@ li:nth-last-child(4):first-child ~ li svg:hover {
 	fill: #FF3333;
 }
 
-#navigation:target {
-	left:0;
-}
-
 a[href="#navigation"],
 a[href="#close"] {
 	display: none;
 }
 
 
-a[role="close"] {
+a[href="close"] {
 	-webkit-box-flex: 100%;
 	-moz-box-flex: 100%;
 	width: 100%;
@@ -276,15 +271,15 @@ article > form button {
 	cursor: pointer;
 }
 
-.effect-01:hover {
+.effect-01 {
 	filter: brightness(0.4);
 	-webkit-filter: brightness(1.2);
 }
-.effect-02:hover {
+.effect-02 {
 	filter: contrast(1.4) sepia(1);	
 	-webkit-filter: contrast(1.4) sepia(1);	
 }
-.effect-03:hover {
+.effect-03 {
 	filter: saturate(0.2);
 	-webkit-filter: saturate(0.2);
 }
@@ -310,9 +305,7 @@ footer {
 	-ms-flex-flow: row wrap;
 	    flex-flow: row wrap;
 
-	-ms-flex-pack: distribute;
-
-	    justify-content: space-around;
+	justify-content: space-around;
 	-webkit-justify-content: space-around;
 	width: 100%;
 	-webkit-flex: 100%;
@@ -344,8 +337,12 @@ footer ul a {
 	color: #000;
 }
 
+footer ul a:hover {
+	color: #333;
+}
+
 footer address {
-	margin:auto;
+	margin: auto;
 }
 
 footer address pre {
@@ -356,6 +353,28 @@ footer address pre {
 /* QUERIES */
 
 @media screen and (max-width: 70em) {
+
+	/* HEADER */
+	body > header {
+		padding: 1em;
+		width: 100%;
+		overflow: none;
+		position: fixed;
+		top: 0;
+		margin: 0;
+		border-radius: 0;
+		left: 110%;
+		height: auto;
+		-webkit-flex: 175px;
+		    -ms-flex: 175px;
+		        flex: 175px;
+		background-color: #EEFFEE;
+		border: 1px solid #000;
+		-webkit-transition: margin ease-out 0.7s;
+	    -moz-transition: margin ease-out 0.7s;
+	    -o-transition: margin ease-out 0.7s;
+	    transition: margin ease-out 0.7s;
+	}
  
 	/* Hamburger */
 	a[href="#navigation"] {
@@ -405,19 +424,7 @@ footer address pre {
 	}
 
 	#navigation:target {
-		left:0;
-	}
-
-	body > header {
-		width: 250px;
-		overflow: none;
-		position: fixed;
-		top: 0;
-		left: -300px;
-		height: 100%;
-		-webkit-flex: 175px;
-		    -ms-flex: 175px;
-		        flex: 175px;
+		left: 0;
 	}
 
 	main {
