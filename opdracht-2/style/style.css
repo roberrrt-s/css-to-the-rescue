@@ -364,10 +364,7 @@ footer address pre {
 /* Lightbox by Gregory Schier - http://codepen.io/gschier/pen/HCoqh?editors=0110 */
 
 .lightbox {
-	/** Default lightbox to hidden */
 	display: none;
-
-	/** Position and style */
 	position: fixed;
 	z-index: 10;
 	width: 100%;
@@ -379,17 +376,12 @@ footer address pre {
 }
 
 .lightbox img {
-	/** Pad the lightbox image */
 	margin: auto;
 	max-width: 40em;
-
 }
 
 .lightbox:target {
-	/** Remove default browser outline */
 	outline: none;
-
-	/** Unhide lightbox **/
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
@@ -402,22 +394,36 @@ footer address pre {
 
 	/* HEADER */
 	body > header {
-		padding: 1em;
 		width: 100%;
+		margin: 0;
+		padding: 0;
 		overflow: none;
 		position: fixed;
-		margin: 0;
 		border-radius: 0;
 		top: -100%;
 		height: auto;
-		-webkit-flex: 175px;
-		    -ms-flex: 175px;
-		        flex: 175px;
+		-webkit-flex: 100%;
+		    -ms-flex: 100%;
+		        flex: 100%;
 		background-color: #EEFFEE;
-		border: 1px solid #000;
+		border: 0px solid #000;
+		border-bottom: 0;
 	 	transition: linear 0.7s;
 	}
  
+	body > header img {
+		display: none;
+	}
+
+	body > header nav {
+		border-bottom: 0px;
+	}
+
+	body > header li {
+		border-bottom: 1px solid #000;
+	}
+
+
 	/* Hamburger */
 	a[href="#navigation"] {
 		display: block;
@@ -437,11 +443,10 @@ footer address pre {
 
 	a[href="#close"] {
 		display: block;
+		position: absolute;
+		margin-top: 0.5em;
 		text-decoration: none;
-    	width: 30px;
-		height: 30px;
-		width: 30px;
-    	height: 30px;
+
 	}
 
 	a[href="#close"]:before, a[href="#close"]:after {
@@ -484,6 +489,20 @@ footer address pre {
 	    height: auto;
 	}
 
+	.lightbox img {
+		margin: auto;
+		max-width: 80%;
+	}
+
+	.current-profile-picture img {
+		max-width: 13em;
+		width: auto;
+	}
+
+	#lightbox-image img {
+		max-width: 70%;
+	}
+
 }
 
 @media screen and (max-width: 45em) {
@@ -502,8 +521,5 @@ footer address pre {
 	    width: auto;
 	    height: auto;
 	}	
-	.current-profile-picture > img {
-		max-width: 13em;
-		width: auto;
-	}
+	
 }
